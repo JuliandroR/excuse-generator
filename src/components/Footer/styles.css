@@ -1,0 +1,35 @@
+.footer-container{
+    width: 97%;
+    padding: 0 1.5%;
+
+    position: fixed;
+    bottom: 0.5vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-container span{
+    color: #2A3D45;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.footer-container div.container-social-networks{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container div.container-social-networks a{
+    font-size: 20px;
+    font-weight: 800;
+    color: #0353A4;
+    transition: color 0.7s;
+    text-decoration: none;
+}
+
+.footer-container div.container-social-networks a:hover{
+    color: #2A3D45;
+}

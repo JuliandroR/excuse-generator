@@ -1,0 +1,99 @@
+.container-main {
+  padding: 3%;
+}
+
+.small-card-content {
+  width: 650px;
+  height: 450px;
+}
+
+.big-card-content {
+  width: 750px;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.big-card-content,
+.small-card-content {
+  padding: 2%;
+
+  background-color: rgba(241, 242, 235, 0.9);
+  border-radius: 8px;
+  box-shadow: 25px 35px 58px -20px rgba(79, 79, 79, 0.54);
+}
+
+div.icon-top{
+    display: block;
+
+    margin-top: -80px;
+    margin-left: -40px;
+
+    font-size: 100px;
+    color: #2A3D45;
+}
+
+.small-card-content p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.small-card-content button{
+    background-color: #0353A4;
+    border: none;
+    font-weight: 800;
+    color: #F1F2EB;
+
+    transition: background-color 0.7s;
+
+    display: block;
+    margin: 50px auto 0 auto;
+}
+
+.small-card-content button:hover{
+    background-color: #2A3D45;
+}
+
+.big-card-content h1{
+    text-align: center;
+    font-weight: 700;
+
+    margin-bottom: 0;
+}
+
+
+.big-card-content section.excuse-container{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 30px;
+}
+
+.big-card-content section.excuse-container div.excuse{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border: solid 2px rgba(42, 61, 69, 0.3);
+    border-radius: 8px;
+    padding: 1%;
+}
+
+.big-card-content section.excuse-container div.excuse p{
+    width: 77.5%;
+    margin: 0;
+
+    font-size: 16px;
+}
+
+.big-card-content section.excuse-container div.excuse button{
+    width: 17.5%;
+    background-color: rgba(42, 61, 69, 0);
+    color: #2A3D45;
+    border: none;
+
+    transition: color 0.7s;
+}
+
+.big-card-content section.excuse-container div.excuse button:hover{
+    color: #0353A4;
+}

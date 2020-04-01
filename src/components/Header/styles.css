@@ -1,0 +1,32 @@
+.header-container{
+    width: 95%;
+    padding: 1% 2.5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h1{
+    color: #2A3D45;
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 3px -1px 8px rgba(241,242,235,0.84);
+}
+
+.header-container button{
+    background-color: #0353A4;
+    border: none;
+
+    width: 150px;
+    height: 40px;
+
+    font-weight: bold;
+    color: #F1F2EB;
+    transition: background-color 0.5s;
+}
+
+.header-container button:hover{
+    background-color: #2A3D45;
+}
