@@ -9,10 +9,10 @@ export default function Footer() {
       <span>Desenvolvido por Juliandro Rocha</span>
 
       <div className="container-social-networks">
-        <a href="https://github.com/JuliandroR" target="_blank">
+        <a href="https://github.com/JuliandroR">
           <FiGithub />
         </a>
-        <a href="https://juliandror.github.io" target="_blank">
+        <a href="https://juliandror.github.io">
           <FiChrome />
         </a>
       </div>

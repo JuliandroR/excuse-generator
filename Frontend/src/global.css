@@ -24,3 +24,10 @@ body{
     padding: 0;
     outline: 0;
 }
+
+.alert {
+    position: fixed;
+    top: 1vh;
+    right: 1vw;
+    z-index: 1;
+  }

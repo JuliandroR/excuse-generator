@@ -1,0 +1,77 @@
+.contribution-container {
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(241, 242, 235, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contribution-container form {
+  width: 550px;
+  height: 550px;
+  background-color: rgb(241, 242, 235);
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 25px 35px 58px -20px rgba(79, 79, 79, 0.54);
+  border: solid 2px rgba(42, 61, 69, 0.3);
+  padding: 10px;
+}
+
+.contribution-container form input,
+.contribution-container form textarea{
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 2px rgba(42, 61, 69, 0.3);
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+}
+
+.contribution-container form textarea{
+    resize: none;
+    height: 150px;
+}
+
+.contribution-container form input[type="text"]{
+    height: 50px;
+}
+
+.contribution-container form .checkbox{
+    width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+    text-align: center;
+}
+
+.contribution-container form button{
+    display: block;
+    margin: 20px auto;
+}
+
+.contribution-container form span{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (orientation: portrait){
+    .contribution-container form {
+        width: 95%;
+        margin-left: -10vw;
+        height: 70vh;
+        padding: 10px;
+      }
+
+      .contribution-container form .checkbox{
+        width: 120%;
+        margin-left: -10%;
+    }
+}

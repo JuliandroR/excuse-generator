@@ -2,98 +2,136 @@
   padding: 3%;
 }
 
-.small-card-content {
-  width: 650px;
-  height: 450px;
-}
-
-.big-card-content {
-  width: 750px;
-  height: 600px;
-  overflow-y: auto;
-}
-
 .big-card-content,
 .small-card-content {
   padding: 2%;
 
   background-color: rgba(241, 242, 235, 0.9);
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 25px 35px 58px -20px rgba(79, 79, 79, 0.54);
+  z-index: 2;
 }
 
-div.icon-top{
-    display: block;
-
-    margin-top: -80px;
-    margin-left: -40px;
-
-    font-size: 100px;
-    color: #2A3D45;
+.small-card-content {
+  width: 90%;
+  padding-bottom: 5vh;
+  /* height: 50vh; */
 }
 
-.small-card-content p{
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
+.big-card-content {
+  width: 100%;
+  height: 70vh;
+  overflow-y: auto;
 }
 
-.small-card-content button{
-    background-color: #0353A4;
-    border: none;
-    font-weight: 800;
-    color: #F1F2EB;
+div.icon-top {
+  display: block;
 
-    transition: background-color 0.7s;
+  margin-top: -80px;
+  margin-left: -40px;
 
-    display: block;
-    margin: 50px auto 0 auto;
+  font-size: 100px;
+  color: #2a3d45;
 }
 
-.small-card-content button:hover{
-    background-color: #2A3D45;
+.small-card-content p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-.big-card-content h1{
-    text-align: center;
-    font-weight: 700;
+.small-card-content button {
+  background-color: #0353a4;
+  border: none;
+  font-weight: 800;
+  color: #f1f2eb;
+  transition: background-color 0.7s;
 
-    margin-bottom: 0;
+  display: block;
+  margin: 50px auto 50px auto;
 }
 
-
-.big-card-content section.excuse-container{
-    width: 95%;
-    margin-left: 2.5%;
-    margin-top: 30px;
+.small-card-content button:hover {
+  background-color: #2a3d45;
 }
 
-.big-card-content section.excuse-container div.excuse{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    border: solid 2px rgba(42, 61, 69, 0.3);
-    border-radius: 8px;
-    padding: 1%;
+.big-card-content h1 {
+  text-align: center;
+  font-weight: 700;
+
+  margin-bottom: 0;
 }
 
-.big-card-content section.excuse-container div.excuse p{
-    width: 77.5%;
-    margin: 0;
-
-    font-size: 16px;
+.big-card-content section.excuse-container {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 30px;
 }
 
-.big-card-content section.excuse-container div.excuse button{
-    width: 17.5%;
-    background-color: rgba(42, 61, 69, 0);
-    color: #2A3D45;
-    border: none;
-
-    transition: color 0.7s;
+div.excuse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: solid 2px rgba(42, 61, 69, 0.3);
+  border-radius: 8px;
+  padding: 5px;
 }
 
-.big-card-content section.excuse-container div.excuse button:hover{
-    color: #0353A4;
+div.excuse p {
+  width: 77.5%;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+div.excuse button {
+  width: 17.5%;
+  background-color: rgba(42, 61, 69, 0);
+  color: #2a3d45;
+  border: none;
+  text-align: center;
+  margin: 0;
+  transition: color 0.7s;
+  font-weight: 600;
+}
+
+div.excuse button:hover {
+  color: #0353a4;
+  background-color: rgba(42, 61, 69, 0);
+}
+
+.big-card-content::-webkit-scrollbar {
+  width: 0.75vw;
+  background: #2a3d45;
+  border-radius: 8px;
+}
+.big-card-content::-webkit-scrollbar-track {
+  background: #f1f2eb;
+}
+.big-card-content::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #2a3d45;
+}
+
+@media (orientation: portrait) {
+  .small-card-content {
+    width: 85%;
+    margin: 5vh 7.5%;
+  }
+
+  .big-card-content {
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 10vh;
+    overflow-y: auto;
+  }
+
+  div.excuse p {
+    width: 75%;
+  }
+  
+  div.excuse button {
+    width: 25%;
+  }
 }
