@@ -39,7 +39,7 @@ export default function Contribution() {
   }
 
   return (
-    <div className="contribution-container" style={{ display: display }}>
+    <div className="contribution-container" style={{ display }}>
       <div className="alert">{alert}</div>
 
       <form onSubmit={sendContribution}>
@@ -66,7 +66,7 @@ export default function Contribution() {
         <Button type="submit" variant="primary">
           Contribuir
         </Button>
-        <span onClick={() => setDisplay("none")}>Voltar</span>
+        <span onClick={() => {setDisplay("none")}}>Voltar</span>
       </form>
     </div>
   );

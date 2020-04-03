@@ -1,9 +1,9 @@
 .footer-container{
     width: 97%;
-    padding: 0 1.5%;
+    padding: 1.5%;
 
     position: fixed;
-    bottom: 0.5vh;
+    bottom: 0vh;
 
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +39,7 @@
 @media (orientation: portrait){
     .footer-container{
         background-color: rgb(241, 242, 235);
-        width: 100vw;
+        width: 100%;
     }
 
     .footer-container span{
